@@ -1,5 +1,12 @@
 "use strict";
 
+function handleOpenUrl(url) {
+  setTimeout(function() {
+    alert("received url: " + url);
+  }, 0);
+}
+
+module.exports = handleOpenUrl;
 /*
  Q: Why an empty file?
  A: iOS doesn't need plumbing to get the plugin to work, so..
